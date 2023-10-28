@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Labb_2_Arv
 {
-    internal class Kattdjur : Djur
+    internal class Kattdjur : Djur //Underklass som reprsenterar kattdjur, ärver från djur.
     {
-        public string _roar;
+        public string _roar;//Lägger till nya egenskaper
         public string _run;
 
-        public Kattdjur(string Name, string Color, string Gender, int Age, int Weight, string Roar, string Run)
+        public Kattdjur(string Name, string Color, string Gender, int Age, int Weight, string Roar, string Run)//Constructor
             : base(Name, Color, Gender, Age, Weight)
         {
             this._roar = Roar;
@@ -19,21 +19,25 @@ namespace Labb_2_Arv
         }
         public override void MakeSound()
         {
-            Console.WriteLine("\nLejonet vrålar");
+            Console.WriteLine("\nLejonet vrålar!");
         }
 
-        public virtual void Eat()
+        public override void Eat()
         {
-            Console.WriteLine("Lejonet äter");
+            Console.WriteLine("Lejonet äter.");
         }
 
-        public virtual void Sleep()
+        public override void Sleep()
         {
-            Console.WriteLine("Lejonet sover");
+            Console.WriteLine("Lejonet sover...");
+        }
+        public void TheKing()//Lägger till en ny metod.
+        {
+            Console.WriteLine("Lejonet är kungen över djungeln!");
         }
 
 
-        internal class Leopard : Kattdjur
+        internal class Leopard : Kattdjur//Ny underklass, ärver från kattdjur.
         {
             public string _dots;
             public Leopard(string Name, string Color, string Gender, int Age, int Weight, string Roar, string Run, string Dots)
@@ -43,17 +47,21 @@ namespace Labb_2_Arv
             }
             public override void MakeSound()
             {
-                Console.WriteLine("\nLeoparden ryter");
+                Console.WriteLine("\nLeoparden ryter!");
             }
 
-            public virtual void Eat()
+            public override void Eat()
             {
-                Console.WriteLine("Leoparden äter");
+                Console.WriteLine("Leoparden äter.");
             }
 
-            public virtual void Sleep()
+            public override void Sleep()
             {
-                Console.WriteLine("Leoparden sover");
+                Console.WriteLine("Leoparden sover...");
+            }
+            public void Climb()//Lägger till en ny metod.
+            {
+                Console.WriteLine("Leoparden klättrar.");
             }
 
 
@@ -68,17 +76,21 @@ namespace Labb_2_Arv
             }
             public override void MakeSound()
             {
-                Console.WriteLine("\nTigern ryter");
+                Console.WriteLine("\nTigern ryter!");
             }
 
-            public virtual void Eat()
+            public override void Eat()
             {
-                Console.WriteLine("Tigern äter");
+                Console.WriteLine("Tigern äter.");
             }
 
-            public virtual void Sleep()
+            public override void Sleep()
             {
-                Console.WriteLine("Tigern sover");
+                Console.WriteLine("Tigern sover...");
+            }
+            public void Big()//Lägger till en ny metod.
+            {
+                Console.WriteLine("Tigern är det största kattdjuret!");
             }
 
         }

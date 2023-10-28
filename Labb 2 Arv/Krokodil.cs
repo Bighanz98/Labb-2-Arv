@@ -19,17 +19,21 @@ namespace Labb_2_Arv
         }
         public override void MakeSound()
         {
-            Console.WriteLine("\nKrokodilen fräser");
+            Console.WriteLine("\nKrokodilen fräser!");
         }
 
-        public virtual void Eat()
+        public override void Eat()
         {
-            Console.WriteLine("Krokodilen äter");
+            Console.WriteLine("Krokodilen äter.");
         }
 
-        public virtual void Sleep()
+        public override void Sleep()
         {
-            Console.WriteLine("Krokodilen sover");
+            Console.WriteLine("Krokodilen sover...");
+        }
+        public void Sun()
+        {
+            Console.WriteLine("Krokodilen ligger och solar.");
         }
 
     }

@@ -17,19 +17,22 @@ namespace Labb_2_Arv
         }
         public override void MakeSound()
         {
-            Console.WriteLine("\nGiraffen surrar");
+            Console.WriteLine("\nGiraffen surrar.");
         }
 
-        public virtual void Eat()
+        public override void Eat()
         {
-            Console.WriteLine("Giraffen äter");
+            Console.WriteLine("Giraffen äter.");
         }
 
-        public virtual void Sleep()
+        public override void Sleep()
         {
-            Console.WriteLine("Giraffen sover");
+            Console.WriteLine("Giraffen sover...");
         }
-
+        public void Stretch()
+        {
+            Console.WriteLine("Giraffen sträcker på sig.");
+        }
     }
 }
 
