@@ -19,7 +19,7 @@ namespace Labb_2_Arv
         }
         public override void MakeSound()
         {
-            Console.WriteLine("\nLejonet vrålar!");
+            Console.WriteLine("\nLejonet ryter!");
         }
 
         public override void Eat()

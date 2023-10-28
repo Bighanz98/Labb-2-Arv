@@ -40,7 +40,7 @@
             giraff.Sleep();
             giraff.Stretch();
 
-            Kattdjur kattdjur = new Kattdjur("Simba", "Brun", "Hane", 17, 190, "Ryter", "Springer");
+            Kattdjur kattdjur = new Kattdjur("Simba", "Brun", "Hane", 17, 190, "Ryter", "springer");
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("\nLejonet");
             Console.ResetColor();
@@ -55,7 +55,7 @@
             kattdjur.Sleep();
             kattdjur.TheKing();
 
-            Kattdjur.Leopard leopard = new Kattdjur.Leopard("Lisa", "Gul med svarta prickar", "Hona", 12, 30, "Ryter", "Springer", "Svarta prickar");
+            Kattdjur.Leopard leopard = new Kattdjur.Leopard("Lisa", "Gul med svarta prickar", "Hona", 12, 30, "Ryter", "springer", "Svarta prickar");
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("\nLeoparden");
             Console.ResetColor();
@@ -70,7 +70,7 @@
             leopard.Sleep();
             leopard.Climb();
             
-            Kattdjur.Tiger tiger = new Kattdjur.Tiger("Tony", "Orange med svarta ränder", "Hane", 10, 300, "Ryter", "Springer", "Svarta ränder");
+            Kattdjur.Tiger tiger = new Kattdjur.Tiger("Tony", "Orange med svarta ränder", "Hane", 10, 300, "Ryter", "springer", "Svarta ränder");
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("\nTigern");
             Console.ResetColor();
